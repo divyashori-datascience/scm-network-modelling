@@ -1,0 +1,5 @@
+# Case data is course material: keep it out of the repository
+data/*.xlsx
+__pycache__/
+*.pyc
+.DS_Store

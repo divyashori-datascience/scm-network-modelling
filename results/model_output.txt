@@ -1,0 +1,37 @@
+
+DATA (slide 2)
+  shipments: 6923
+  total kg: 6529170.0
+  missing values: 0
+  duplicate IDs: 0
+  look-alike rows: 595
+  shipping days: 362
+  min / max kg: (np.float64(10.0), np.float64(17450.0))
+  shipments over 7,000 kg: 73
+  customers matched: 33 of 33
+  supplier kg: {'CA91720': 1863890.0, 'GA30043': 4665280.0}
+
+PART 1 (slide 4): best set per number of docks
+  1: GA30113                        in $353.3M  out $284.8M  proc $8.2M  set-up $10.8M  total $657.1M
+  2: TX75477 + GA30113              in $304.8M  out $231.3M  proc $8.9M  set-up $19.6M  total $564.7M
+  3: NY10006 + TX75477 + GA30113    in $383.1M  out $132.7M  proc $10.0M  set-up $26.3M  total $552.1M
+  4: NY10006 + TX75477 + GA30113 + IL61849 in $394.8M  out $120.2M  proc $10.1M  set-up $34.1M  total $559.3M
+  5: NC27695 + NY10006 + TX75477 + GA30113 + IL61849 in $401.0M  out $112.6M  proc $10.3M  set-up $44.0M  total $567.9M
+
+CLUSTERING (slide 5)
+  avg km to nearest centre: {1: 697, 2: 462, 3: 319, 4: 173, 5: 117}
+  centre to nearest dock (km): {'TX75477': 33, 'GA30113': 296, 'NY10006': 4}
+  same dock as Part 1: 27 of 33 customers, 93% of kg
+
+PART 2 (slides 9-13)
+  in: 1,629 loads, 4.5/day, mean 4,008 kg, FTL share 57%, 552 trucks, $22.9/kg
+  out: 3,267 loads, 9.0/day, mean 1,999 kg, FTL share 30%, 300 trucks, $10.1/kg
+  loads total 4,896, FTL share of leg-kg 43%
+  NY10006: in $48.7M  out $1.1M  inbound FTL 33%  outbound FTL 28%
+  TX75477: in $50.3M  out $19.4M  inbound FTL 49%  outbound FTL 38%
+  GA30113: in $50.6M  out $45.7M  inbound FTL 69%  outbound FTL 27%
+  cost: inbound $149.6M  outbound $66.2M  processing $10.0M  set-up $26.3M
+  YEAR 1 $252.1M   YEAR 2+ $225.8M   reference today $268.7M  (-6.2% / -16.0%)
+
+COSTING NOTE (slide 15)
+  Part 2 rank of the Part 1 pick: 4 of 31; single GA30113: rank 1, year 1 $225.0M, year 2+ $214.2M
