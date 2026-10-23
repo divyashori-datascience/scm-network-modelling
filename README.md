@@ -1,7 +1,7 @@
 # Stalmart Inc. – Cross-Dock Network Modelling
 
 HSLU · Data-driven Supply Chain Management and Logistics · Group 2, Topic 3
-Case study by Kuehne+Nagel: *Group assignment "Network modelling"*, March 2026
+Case study by Kuehne+Nagel: *Group assignment "Network modelling"*, October 2026
 
 Stalmart Inc., a US technology company, ships every order directly from 2 suppliers to 33 customers in 17 states, almost all as less-than-truckload (LTL). This project develops an adjusted network that routes freight through cross-docks so it can be consolidated into full truckloads (FTL), and calculates what that network costs.
 
